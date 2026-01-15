@@ -5534,50 +5534,50 @@ class _DriverAccountsPageState extends State<DriverAccountsPage> {
                     SizedBox(height: 16),
 
                     // نوع الدفع - مبدئي كامل
-                    if (remainingAmount > 0)
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          ChoiceChip(
-                            label: Text('دفع كامل'),
-                            selected: paymentType == 'كامل',
-                            onSelected: (selected) {
-                              if (selected) {
-                                setState(() {
-                                  paymentType = 'كامل';
-                                  amountController.text = remainingAmount
-                                      .toStringAsFixed(2);
-                                });
-                              }
-                            },
-                            selectedColor: Colors.green,
-                            labelStyle: TextStyle(
-                              color: paymentType == 'كامل'
-                                  ? Colors.white
-                                  : Colors.green,
-                            ),
-                          ),
-                          SizedBox(width: 15),
-                          ChoiceChip(
-                            label: Text('دفع جزئي'),
-                            selected: paymentType == 'جزئي',
-                            onSelected: (selected) {
-                              if (selected) {
-                                setState(() {
-                                  paymentType = 'جزئي';
-                                  amountController.clear();
-                                });
-                              }
-                            },
-                            selectedColor: Colors.blue,
-                            labelStyle: TextStyle(
-                              color: paymentType == 'جزئي'
-                                  ? Colors.white
-                                  : Colors.blue,
-                            ),
-                          ),
-                        ],
-                      ),
+                    // if (remainingAmount > 0)
+                    //   Row(
+                    //     mainAxisAlignment: MainAxisAlignment.start,
+                    //     children: [
+                    //       ChoiceChip(
+                    //         label: Text('دفع كامل'),
+                    //         selected: paymentType == 'كامل',
+                    //         onSelected: (selected) {
+                    //           if (selected) {
+                    //             setState(() {
+                    //               paymentType = 'كامل';
+                    //               amountController.text = remainingAmount
+                    //                   .toStringAsFixed(2);
+                    //             });
+                    //           }
+                    //         },
+                    //         selectedColor: Colors.green,
+                    //         labelStyle: TextStyle(
+                    //           color: paymentType == 'كامل'
+                    //               ? Colors.white
+                    //               : Colors.green,
+                    //         ),
+                    //       ),
+                    //       SizedBox(width: 15),
+                    //       ChoiceChip(
+                    //         label: Text('دفع جزئي'),
+                    //         selected: paymentType == 'جزئي',
+                    //         onSelected: (selected) {
+                    //           if (selected) {
+                    //             setState(() {
+                    //               paymentType = 'جزئي';
+                    //               amountController.clear();
+                    //             });
+                    //           }
+                    //         },
+                    //         selectedColor: Colors.blue,
+                    //         labelStyle: TextStyle(
+                    //           color: paymentType == 'جزئي'
+                    //               ? Colors.white
+                    //               : Colors.blue,
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
                     SizedBox(height: 16),
 
                     // حقل المبلغ
